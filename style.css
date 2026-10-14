@@ -1337,47 +1337,6 @@ img {
         font-size: 45px;
     }
 
-
-    /* -------------------------
-       NEWS
-    ------------------------- */
-
-    .news-item {
-        grid-template-columns:
-            90px
-            60px
-            1fr;
-
-        gap: 10px;
-
-        padding:
-            20px 0;
-    }
-
-    .news-item p {
-        grid-column:
-            1 / -1;
-
-        padding-top: 5px;
-    }
-
-    .news-item .arrow {
-        display: none;
-    }
-
-
-    /* -------------------------
-       MUSIC
-    ------------------------- */
-
-    .music-grid {
-        grid-template-columns:
-            1fr;
-
-        gap: 50px;
-    }
-
-
     /* -------------------------
        VIDEO
     ------------------------- */
@@ -1454,7 +1413,24 @@ img {
         gap: 15px;
     }
 
-
+      /* -------------------------
+         COMING SOON PAGE
+      ------------------------- */
+      
+      .coming-soon-hero {
+          min-height: calc(100vh - 90px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+      }
+      
+      .coming-soon-hero .detail-hero-content {
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+      }
+   
     /* =====================================================
        LIVE DETAIL MOBILE
     ===================================================== */
