@@ -1180,6 +1180,30 @@ img {
     font-size: 15px;
 }
 
+/* -------------------------
+   COMING SOON PAGE
+------------------------- */
+
+body.coming-soon-page {
+    background: #FFFFFF;
+    min-height: 100vh;
+}
+
+.coming-soon-page .detail-hero {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px 7vw;
+}
+
+.coming-soon-page .detail-hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 /* -------------------------
    TICKET
@@ -1412,24 +1436,6 @@ img {
     .footer-sns {
         gap: 15px;
     }
-
-      /* -------------------------
-         COMING SOON PAGE
-      ------------------------- */
-      
-      .coming-soon-hero {
-          min-height: calc(100vh - 90px);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          box-sizing: border-box;
-      }
-      
-      .coming-soon-hero .detail-hero-content {
-          width: 100%;
-          margin: 0 auto;
-          text-align: center;
-      }
    
     /* =====================================================
        LIVE DETAIL MOBILE
