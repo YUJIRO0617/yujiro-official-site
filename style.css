@@ -376,91 +376,6 @@ img {
 
 
 /* =========================
-   NEWS
-========================= */
-
-.news-list {
-    border-top:
-        1px solid
-        rgba(255, 255, 255, 0.2);
-}
-
-.news-item {
-    position: relative;
-
-    display: grid;
-
-    grid-template-columns:
-        120px
-        80px
-        1fr
-        30px;
-
-    align-items: center;
-
-    gap: 25px;
-
-    min-height: 100px;
-
-    border-bottom:
-        1px solid
-        rgba(255, 255, 255, 0.15);
-
-    transition:
-        padding 0.3s ease,
-        background 0.3s ease;
-}
-
-.news-item:hover {
-    padding-left: 15px;
-
-    background:
-        rgba(255, 255, 255, 0.03);
-}
-
-.news-item time {
-    font-size: 12px;
-
-    opacity: 0.5;
-}
-
-.news-category {
-    font-size: 9px;
-
-    letter-spacing: 0.15em;
-
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.4);
-
-    padding:
-        3px 8px;
-
-    width: fit-content;
-}
-
-.news-item p {
-    font-size: 14px;
-}
-
-.arrow {
-    font-size: 20px;
-
-    opacity: 0.5;
-
-    transition:
-        transform 0.3s ease;
-}
-
-.news-item:hover .arrow {
-    transform:
-        translateX(5px);
-
-    opacity: 1;
-}
-
-
-/* =========================
    BUTTON
 ========================= */
 
@@ -490,85 +405,6 @@ img {
 
     color: #000000;
 }
-
-
-/* =========================
-   MUSIC
-========================= */
-
-.music-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 30px;
-}
-
-.music-card {
-    display: block;
-}
-
-.music-image {
-    position: relative;
-
-    aspect-ratio: 1 / 1;
-
-    background:
-        linear-gradient(
-            135deg,
-            #1b1b1b,
-            #383838
-        );
-
-    overflow: hidden;
-}
-
-.music-image::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.15);
-}
-
-.music-number {
-    position: absolute;
-
-    right: 20px;
-    bottom: 15px;
-
-    font-size: 80px;
-
-    font-weight: 700;
-
-    opacity: 0.08;
-}
-
-.music-info {
-    padding-top: 20px;
-}
-
-.music-info p {
-    font-size: 9px;
-
-    letter-spacing: 0.2em;
-
-    opacity: 0.5;
-}
-
-.music-info h3 {
-    margin-top: 5px;
-
-    font-size: 17px;
-
-    font-weight: 400;
-}
-
 
 /* =========================
    VIDEO
@@ -913,57 +749,6 @@ img {
     opacity: 1;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-section {
-    text-align: center;
-
-    min-height: 500px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-}
-
-.contact-section .section-title {
-    justify-content: center;
-}
-
-.contact-content p {
-    max-width: 500px;
-
-    margin:
-        0 auto 30px;
-
-    font-size: 13px;
-
-    opacity: 0.6;
-}
-
-.contact-mail {
-    font-size:
-        clamp(20px, 4vw, 40px);
-
-    border-bottom:
-        1px solid
-        rgba(255, 255, 255, 0.5);
-
-    padding-bottom: 5px;
-
-    transition:
-        opacity 0.3s ease;
-}
-
-.contact-mail:hover {
-    opacity: 0.5;
-}
-
-
 /* =========================
    FOOTER
 ========================= */
@@ -1185,12 +970,13 @@ img {
 ------------------------- */
 
 body.coming-soon-page {
-    background: #FFFFFF;
+    background: #ffffff;
+    color: #000000;
     min-height: 100vh;
 }
 
 .coming-soon-page .detail-hero {
-    min-height: calc(100vh - 90px);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1203,6 +989,11 @@ body.coming-soon-page {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
+}
+
+.coming-soon-page .detail-hero-content h1 {
+    margin: 0;
+    color: #000000;
 }
 
 /* -------------------------
