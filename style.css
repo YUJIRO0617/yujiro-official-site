@@ -36,7 +36,6 @@ img {
     display: block;
 }
 
-
 /* =========================
    HEADER
 ========================= */
@@ -72,7 +71,6 @@ img {
     backdrop-filter: blur(10px);
 }
 
-
 /* ロゴ */
 
 .logo {
@@ -86,7 +84,6 @@ img {
     width: 150px;
     height: auto;
 }
-
 
 /* =========================
    NAV
@@ -127,7 +124,6 @@ img {
 .nav a:hover::after {
     width: 100%;
 }
-
 
 /* =========================
    MENU BUTTON
@@ -179,7 +175,6 @@ img {
         translateY(-7px)
         rotate(-45deg);
 }
-
 
 /* =========================
    HERO
@@ -281,7 +276,6 @@ img {
     letter-spacing: 0.45em;
 }
 
-
 /* スクロール表示 */
 
 .scroll {
@@ -318,7 +312,6 @@ img {
             transparent
         );
 }
-
 
 /* =========================
    SECTION
@@ -373,7 +366,6 @@ img {
 
     opacity: 0.55;
 }
-
 
 /* =========================
    BUTTON
@@ -529,7 +521,6 @@ img {
     opacity: 0.5;
 }
 
-
 /* =========================
    LIVE
 ========================= */
@@ -608,7 +599,6 @@ img {
     letter-spacing: 0.15em;
 }
 
-
 /* =========================
    PROFILE
 ========================= */
@@ -657,7 +647,6 @@ img {
 
     opacity: 0.7;
 }
-
 
 /* =========================
    SNS
@@ -813,7 +802,6 @@ img {
     opacity: 0.3;
 }
 
-
 /* =========================
    SCROLL REVEAL
 ========================= */
@@ -836,13 +824,9 @@ img {
         translateY(0);
 }
 
-
 /* =========================================================
    LIVE DETAIL PAGE
 ========================================================= */
-
-
-
 
 /* -------------------------
    DETAIL HERO
@@ -903,7 +887,6 @@ img {
     letter-spacing: 0.03em;
 }
 
-
 /* -------------------------
    DETAIL SECTION
 ------------------------- */
@@ -924,7 +907,6 @@ img {
 
     margin-bottom: 40px;
 }
-
 
 /* -------------------------
    EVENT INFORMATION
@@ -1004,7 +986,6 @@ body.coming-soon-page {
     margin-top: 30px;
 }
 
-
 /* -------------------------
    NOTES
 ------------------------- */
@@ -1018,7 +999,6 @@ body.coming-soon-page {
 
     color: #cccccc;
 }
-
 
 /* =========================================================
    DETAIL BACK BUTTON
@@ -1045,6 +1025,40 @@ body.coming-soon-page {
     opacity: 1;
 }
 
+/* =========================
+   HERO LOGO IMAGE
+========================= */
+
+.hero-logo {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   LIVE PAGE THEMES
+   HTML側の<body>に対応するクラスを指定する
+========================================================= */
+
+/* 2027年1月9日*/
+body.live-20270109 {
+    background: linear-gradient(to bottom, #FFFFFF, #BFFCFF);
+    color: #000C5D;
+}
+
+/* 2026年10月4日 */
+body.live-20261004 {
+    background: linear-gradient(to bottom, #000000, #440002);
+    color: #FFFFFF;
+}
+
+/* 2025年9月27日*/
+body.live-20250927 {
+    background: linear-gradient(to bottom, #9b3ec9, #150c47);
+    color: #FFFFFF;
+}
 
 /* =========================================================
    MOBILE
@@ -1070,7 +1084,6 @@ body.coming-soon-page {
     .menu-button {
         display: block;
     }
-
 
     /* -------------------------
        NAV
@@ -1123,7 +1136,6 @@ body.coming-soon-page {
         letter-spacing: 0.2em;
     }
 
-
     /* -------------------------
        HERO
     ------------------------- */
@@ -1131,7 +1143,6 @@ body.coming-soon-page {
     .hero {
         min-height: 600px;
     }
-
 
     /* -------------------------
        SECTION
@@ -1163,7 +1174,6 @@ body.coming-soon-page {
         gap: 45px;
     }
 
-
     /* -------------------------
        LIVE
     ------------------------- */
@@ -1183,7 +1193,6 @@ body.coming-soon-page {
         display: none;
     }
 
-
     /* -------------------------
        PROFILE
     ------------------------- */
@@ -1199,7 +1208,6 @@ body.coming-soon-page {
         font-size: 38px;
     }
 
-
     /* -------------------------
        SNS
     ------------------------- */
@@ -1212,7 +1220,6 @@ body.coming-soon-page {
     .sns-item:nth-child(odd) {
         border-right: none;
     }
-
 
     /* -------------------------
        FOOTER
@@ -1227,24 +1234,13 @@ body.coming-soon-page {
     .footer-sns {
         gap: 15px;
     }
-
-   /* トップページのロゴ画像 */
-   .hero-logo {
-       display: block;
-       width: 50%;
-       max-width: 300px;
-       height: auto;
-       margin: 0 auto;
-   }
-   
-    /* =====================================================
+/* =====================================================
        LIVE DETAIL MOBILE
     ===================================================== */
 
     .detail-page {
         padding-top: 70px;
     }
-
 
     /* 詳細ページ画像 */
 
@@ -1263,7 +1259,6 @@ body.coming-soon-page {
         object-fit: contain;
     }
 
-
     /* 詳細ページタイトル */
 
     .detail-hero-content {
@@ -1273,7 +1268,6 @@ body.coming-soon-page {
     .detail-hero-content h1 {
         font-size: 42px;
     }
-
 
     /* 詳細情報 */
 
@@ -1285,7 +1279,6 @@ body.coming-soon-page {
     .detail-section h2 {
         font-size: 24px;
     }
-
 
     /* イベント情報 */
 
@@ -1308,7 +1301,6 @@ body.coming-soon-page {
         font-size: 14px;
     }
 
-
     /* 注意事項 */
 
     .notes {
@@ -1316,7 +1308,6 @@ body.coming-soon-page {
 
         line-height: 1.9;
     }
-
 
     /* 戻るボタン */
 
