@@ -1060,6 +1060,36 @@ body.live-20250927 {
     color: #FFFFFF;
 }
 
+/* ライブ画像を横並びにする */
+.live-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.live-images img {
+    display: block;
+    width: calc(50% - 10px);
+    height: auto;
+    object-fit: contain;
+}
+
+/* スマートフォン */
+@media (max-width: 768px) {
+    .live-images {
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .live-images img {
+        width: calc(50% - 5px);
+    }
+}
+
 /* =========================================================
    MOBILE
 ========================================================= */
