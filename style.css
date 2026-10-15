@@ -1068,7 +1068,7 @@ footer a {
 }
 
 /* ライブポスターを横並びにする */
-.live-images {
+.detail-hero-image {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center;
@@ -1079,7 +1079,7 @@ footer a {
     margin: 0 auto 60px;
 }
 
-.live-images img {
+.detail-hero-image img {
     display: block;
     flex: 1 1 0;
     width: calc(50% - 6px) !important;
@@ -1282,11 +1282,18 @@ footer a {
         max-width: 100%;
     }
 
-    .detail-hero-image img {
-        max-height: 400px;
-
-        object-fit: contain;
-    }
+      .detail-hero-image {
+          flex-direction: row;
+          gap: 10px;
+      }
+      
+      .detail-hero-image img {
+          width: calc(50% - 5px);
+          max-width: calc(50% - 5px);
+          max-height: none;
+          height: auto;
+          object-fit: contain;
+      }
 
     /* 詳細ページタイトル */
 
