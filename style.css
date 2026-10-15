@@ -605,46 +605,41 @@ img {
 
 .profile {
     display: grid;
-
     grid-template-columns:
         1fr 1fr;
-
     gap: 8vw;
-
     align-items: center;
 }
 
 .profile-image {
     overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .profile-image img {
+    display: block;
+    width: 100%;
+    height: auto;
     aspect-ratio: 4 / 5;
-
     object-fit: cover;
-
     background: #202020;
 }
 
 .profile-text {
-    max-width: 500px;
+    max-width: 1500px;
 }
 
 .profile-name {
-    font-size: 45px;
-
+    font-size: 50px;
     font-weight: 700;
-
     letter-spacing: 0.04em;
-
     margin-bottom: 10px;
 }
 
 .profile-text > p:not(.profile-name) {
     margin-bottom: 30px;
-
     font-size: 14px;
-
     opacity: 0.7;
 }
 
