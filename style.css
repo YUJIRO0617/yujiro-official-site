@@ -1060,12 +1060,13 @@ body.live-20250927 {
     color: #FFFFFF;
 }
 
-/* ライブ画像を横並びにする */
+/* ライブポスターを横並びにする */
 .live-images {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 12px;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto 60px;
@@ -1073,21 +1074,12 @@ body.live-20250927 {
 
 .live-images img {
     display: block;
-    width: calc(50% - 10px);
+    flex: 1 1 0;
+    width: calc(50% - 6px) !important;
+    max-width: 50%;
     height: auto;
     object-fit: contain;
-}
-
-/* スマートフォン */
-@media (max-width: 768px) {
-    .live-images {
-        gap: 10px;
-        margin-bottom: 40px;
-    }
-
-    .live-images img {
-        width: calc(50% - 5px);
-    }
+    min-width: 0;
 }
 
 /* =========================================================
