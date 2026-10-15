@@ -1060,6 +1060,18 @@ body.live-20250927 {
     color: #FFFFFF;
 }
 
+/* フッターの文字色を常に白に固定 */
+footer,
+footer p,
+footer span,
+footer h1,
+footer h2,
+footer h3,
+footer li,
+footer a {
+    color: #FFFFFF !important;
+}
+
 /* ライブポスターを横並びにする */
 .live-images {
     display: flex !important;
