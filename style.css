@@ -892,7 +892,7 @@ img {
     margin: 0 auto;
 
     padding:
-        80px 7vw;
+        35px 7vw;
 }
 
 .detail-section h2 {
@@ -900,7 +900,7 @@ img {
 
     letter-spacing: 0.08em;
 
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* -------------------------
@@ -1309,7 +1309,7 @@ footer a {
 
     .detail-section {
         padding:
-            60px 20px;
+            30px 20px;
     }
 
     .detail-section h2 {
