@@ -833,7 +833,7 @@ img {
     width: 100%;
 
     padding:
-        60px 7vw 80px;
+        60px 7vw 0px;
 }
 
 .detail-hero-image {
@@ -860,7 +860,7 @@ img {
     max-width: 900px;
 
     margin:
-        40px auto 0;
+        0 auto 0;
 }
 
 .detail-hero-content p {
@@ -1088,7 +1088,7 @@ footer a {
     gap: 12px;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto 60px;
+    margin: 0 auto 0;
 }
 
 .detail-hero-image img {
