@@ -6,8 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>LIVE | YUJIRO</title>
+    <meta name="description" content="YUJIROのライブ情報一覧。開催予定の公演や過去のライブ情報を掲載しています。">
 
+    <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* LIVE一覧ページ */
+        .live-index-page {
+            min-height: 100vh;
+            padding: 150px 7vw 100px;
+            background: #080808;
+            color: #fff;
+        }
+
+        .live-index-heading {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .live-index-heading h1 {
+            font-size: clamp(48px, 8vw, 90px);
+            line-height: 1;
+            letter-spacing: 0.08em;
+            margin-bottom: 50px;
+        }
+
+        /* 公演一覧 */
+        .live-index-list {
+            max-width: 1100px;
+            margin: 0 auto;
+            border-top: 1px solid #444;
+        }
+
+        .live-index-list .live-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            align-items: center;
+            gap: 25px;
+            min-height: 125px;
+            padding: 25px 10px;
+            border-bottom: 1px solid #333;
+            color: inherit;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .live-index-list .live-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .live-index-list .live-date small {
+            color: #aaa;
+            font-size: 13px;
+            letter-spacing: 0.04em;
+        }
+
+        .live-index-list .live-info p {
+            margin-bottom: 6px;
+            color: #999;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            opacity: 1;
+        }
+
+        .live-index-list .live-info h2 {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 768px) {
+            .live-index-page {
+                padding: 120px 6vw 70px;
+            }
+
+            .live-index-heading h1 {
+                margin-bottom: 35px;
+            }
+
+            .live-index-list .live-item {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 8px;
+                min-height: 110px;
+                padding: 20px 5px;
+            }
+
+            .live-index-list .live-info h2 {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +109,9 @@
             <img src="../images/logo.png" alt="YUJIRO">
         </a>
 
-        <button class="menu-button" id="menuButton">
+        <button class="menu-button" id="menuButton"
+                aria-label="メニューを開く"
+                aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -34,179 +126,132 @@
 
     </header>
 
+    <main class="live-index-page">
 
-    <!-- ページタイトル -->
-    <main>
-
-        <section class="page-title">
+        <div class="live-index-heading">
             <h1>LIVE</h1>
-        </section>
-
+        </div>
 
         <!-- ライブ一覧 -->
-        <section class="live-page">
+        <div class="live-index-list" id="liveList">
 
-            <div class="live-list">
+            <!-- 2027年1月 -->
+            <a href="coming%20soon.html" class="live-item">
+                <div class="live-date">
+                    <small>2027.01.??</small>
+                </div>
+                <div class="live-info">
+                    <p>？？？？？</p>
+                    <h2>？？？？？</h2>
+                </div>
+            </a>
 
-                <!-- ライブ1 -->
-                <a href="coming soon.html" class="live-item">
+            <!-- 2026年10月 -->
+            <a href="live20261004.html" class="live-item">
+                <div class="live-date">
+                    <small>2026.10.04</small>
+                </div>
+                <div class="live-info">
+                    <p>西川口GALAXY</p>
+                    <h2>ウタイテカクメイ外伝 -関東襲来篇-</h2>
+                </div>
+            </a>
 
-                    <div class="live-date">
-                        <small>2027.01.??</small>
-                    </div>
+            <!-- 2025年9月27日 -->
+            <a href="live20250927.html" class="live-item">
+                <div class="live-date">
+                    <small>2025.09.27</small>
+                </div>
+                <div class="live-info">
+                    <p>堀江Goldee</p>
+                    <h2>Up Rising !! vol.2 / 革命讃歌 第二章</h2>
+                </div>
+            </a>
 
-                    <div class="live-info">
-                        <p>？？？？？</p>
-                        <h2>？？？？？</h2>
-                    </div>
+            <!-- 2025年9月7日 -->
+            <a href="live20250907.html" class="live-item">
+                <div class="live-date">
+                    <small>2025.09.07</small>
+                </div>
+                <div class="live-info">
+                    <p>西荻BETTYROOM</p>
+                    <h2>Showcase holiday vol.1</h2>
+                </div>
+            </a>
 
-                    <span class="live-status">
-                        INFO
-                    </span>
+            <!-- 2025年7月21日 -->
+            <a href="live20250721.html" class="live-item">
+                <div class="live-date">
+                    <small>2025.07.21</small>
+                </div>
+                <div class="live-info">
+                    <p>LIVE HOUSE ODAWARA Quest</p>
+                    <h2>声刃乱舞 -Seijin Ranbu-</h2>
+                </div>
+            </a>
 
-                </a>
+            <!-- 2025年7月5日 -->
+            <a href="live20250705.html" class="live-item">
+                <div class="live-date">
+                    <small>2025.07.05</small>
+                </div>
+                <div class="live-info">
+                    <p>なんばMILULARI Legacy</p>
+                    <h2>カクメイゼンヤ vol.2</h2>
+                </div>
+            </a>
 
-                <a href="live20261004.html" class="live-item">
+            <!-- 2025年6月28日 -->
+            <a href="live20250628.html" class="live-item">
+                <div class="live-date">
+                    <small>2025.06.28</small>
+                </div>
+                <div class="live-info">
+                    <p>SOUND NOTE OSAKA</p>
+                    <h2>Resistance Party .3rd</h2>
+                </div>
+            </a>
 
-                    <div class="live-date">
-                        <small>2026.10.04</small>
-                    </div>
+            <!-- 2025年4月5日 -->
+            <a href="live20250405.html" class="live-item">
+                <div class="live-date">
+                    <small>2025.04.05</small>
+                </div>
+                <div class="live-info">
+                    <p>池袋LIVE INN ROSA</p>
+                    <h2>Chrysalis</h2>
+                </div>
+            </a>
 
-                    <div class="live-info">
-                        <p>西川口GALAXY</p>
-                        <h2>ウタイテカクメイ外伝 -関東襲来篇-</h2>
-                    </div>
-
-                    <span class="live-status">
-                        INFO
-                    </span>
-
-                <a href="live20250927.html" class="live-item">
-
-                    <div class="live-date">
-                        <small>2025.09.27</small>
-                    </div>
-
-                    <div class="live-info">
-                        <p>堀江Goldee</p>
-                        <h2>Up Rising !! vol.2 / 革命讃歌 第二章</h2>
-                    </div>
-
-                    <span class="live-status">
-                        INFO
-                    </span>
-
-                <a href="live20250907.html" class="live-item">
-
-                    <div class="live-date">
-                        <small>2025.09.07</small>
-                    </div>
-
-                    <div class="live-info">
-                        <p>西荻BETTYROOM</p>
-                        <h2>Showcase holiday vol.1</h2>
-                    </div>
-
-                    <span class="live-status">
-                        INFO
-                    </span>
-
-                 <a href="live20250721.html" class="live-item">
-
-                    <div class="live-date">
-                        <small>2025.07.21</small>
-                    </div>
-
-                    <div class="live-info">
-                        <p>LIVE HOUSE ODAWARA Quest</p>
-                        <h2>声刃乱舞 -Seijin Ranbu-</h2>
-                    </div>
-
-                    <span class="live-status">
-                        INFO
-                    </span>
-
-                <a href="live20250705.html" class="live-item">
-
-                    <div class="live-date">
-                        <small>2025.07.05</small>
-                    </div>
-
-                    <div class="live-info">
-                        <p>なんばMILULARI Legacy</p>
-                        <h2>カクメイゼンヤ vol.2</h2>
-                    </div>
-
-                    <span class="live-status">
-                        INFO
-                    </span>
-
-                <a href="live20250628.html" class="live-item">
-
-                    <div class="live-date">
-                        <small>2025.06.28</small>
-                    </div>
-
-                    <div class="live-info">
-                        <p>SOUND NOTE OSAKA</p>
-                        <h2>Resistance Party .3rd</h2>
-                    </div>
-
-                    <span class="live-status">
-                        INFO
-                    </span>
-
-                <a href="live20250405.html" class="live-item">
-
-                    <div class="live-date">
-                        <small>2025.04.05</small>
-                    </div>
-
-                    <div class="live-info">
-                        <p>池袋LIVE INN ROSA</p>
-                        <h2>Chrysalis</h2>
-                    </div>
-
-                    <span class="live-status">
-                        INFO
-                    </span>
-
-                </a>
-
-            </div>
-
-        </section>
+        </div>
 
     </main>
-
 
     <!-- フッター -->
     <footer class="footer">
 
         <div class="footer-inner">
 
-            <div class="footer-logo">
-                YUJIRO
-            </div>
+            <div class="footer-logo">YUJIRO</div>
 
             <div class="footer-sns">
                 <a href="https://www.youtube.com/@YU_sing0617"
-                   target="_blank">YouTube</a>
+                   target="_blank" rel="noopener noreferrer">YouTube</a>
 
                 <a href="https://www.nicovideo.jp/user/55115095"
-                   target="_blank">ニコニコ</a>
+                   target="_blank" rel="noopener noreferrer">ニコニコ</a>
 
                 <a href="https://x.com/YUJIRO_0617"
-                   target="_blank">X</a>
+                   target="_blank" rel="noopener noreferrer">X</a>
 
                 <a href="https://twitcasting.tv/yu_0617_bs"
-                   target="_blank">ツイキャス</a>
+                   target="_blank" rel="noopener noreferrer">ツイキャス</a>
 
                 <a href="https://www.tiktok.com/@yu_0617_bs"
-                   target="_blank">TikTok</a>
+                   target="_blank" rel="noopener noreferrer">TikTok</a>
 
                 <a href="https://www.instagram.com/YU_0617_BS/"
-                   target="_blank">Instagram</a>
+                   target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
 
             <p class="copyright">
@@ -217,9 +262,7 @@
 
     </footer>
 
-
     <script src="../script.js"></script>
 
 </body>
-
 </html>
