@@ -1055,6 +1055,18 @@ body.live-20250927 {
     color: #FFFFFF;
 }
 
+/* 2025年9月7日*/
+body.live-20250927 {
+    background: linear-gradient(to bottom, #010101, #3e0220);
+    color: #FFFFFF;
+}
+
+/* 2025年7月21日*/
+body.live-20250721 {
+    background: linear-gradient(to bottom, #6f0003, #ccbf00);
+    color: #FFFFFF;
+}
+
 /* フッターの文字色を常に白に固定 */
 footer,
 footer p,
