@@ -379,9 +379,7 @@ img {
     padding:
         14px 30px;
 
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.5);
+    border: 1px solid currentColor;
 
     font-size: 10px;
 
@@ -908,8 +906,7 @@ img {
 ------------------------- */
 
 .event-info {
-    border-top:
-        1px solid #333;
+    border-top: 1px solid currentColor;
 }
 
 .event-row {
@@ -924,8 +921,7 @@ img {
     padding:
         25px 0;
 
-    border-bottom:
-        1px solid #333;
+    border-bottom: 1px solid currentColor;
 }
 
 .event-row span {
@@ -933,7 +929,7 @@ img {
 
     letter-spacing: 0.15em;
 
-    color: #999;
+    color: inherit;
 }
 
 .event-row p {
@@ -992,7 +988,7 @@ body.coming-soon-page {
 
     font-size: 14px;
 
-    color: #cccccc;
+    color: inherit;
 }
 
 /* =========================================================
