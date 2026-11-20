@@ -404,11 +404,11 @@ img {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3, minmax(0, 1fr));
 
     gap: 30px;
 
-    min-height: 150px;
+    width: 100%;
 }
 
 .video-card {
