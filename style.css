@@ -642,6 +642,225 @@ img {
 }
 
 /* =========================
+   PROFILE PAGE
+========================= */
+
+.profile-page {
+    background: #080808;
+    color: #ffffff;
+}
+
+
+/* -------------------------
+   PROFILE PAGE HERO
+------------------------- */
+
+.profile-page-main {
+    padding-top: 90px;
+}
+
+.profile-page-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:
+        150px 7vw 120px;
+}
+
+.profile-page-label {
+    margin-bottom: 25px;
+
+    font-size: 11px;
+    letter-spacing: 0.4em;
+
+    opacity: 0.5;
+}
+
+.profile-page-hero h1 {
+    font-size:
+        clamp(60px, 12vw, 150px);
+
+    line-height: 0.9;
+    letter-spacing: 0.03em;
+}
+
+.profile-page-name {
+    margin-top: 35px;
+
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+
+
+/* -------------------------
+   PROFILE PAGE SECTION
+------------------------- */
+
+.profile-page-section {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding:
+        100px 7vw;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.15);
+}
+
+.profile-page-section-title {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 25px;
+
+    margin-bottom: 60px;
+}
+
+.profile-page-section-title span {
+    font-size: 11px;
+
+    letter-spacing: 0.15em;
+
+    opacity: 0.4;
+}
+
+.profile-page-section-title h2 {
+    font-size:
+        clamp(32px, 5vw, 60px);
+
+    line-height: 1;
+
+    letter-spacing: 0.04em;
+}
+
+
+/* -------------------------
+   BIOGRAPHY
+------------------------- */
+
+.profile-biography {
+    max-width: 800px;
+
+    margin-left: auto;
+}
+
+.profile-biography p {
+    margin-bottom: 30px;
+
+    font-size: 15px;
+
+    line-height: 2.2;
+
+    letter-spacing: 0.06em;
+}
+
+.profile-biography p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* -------------------------
+   PROFILE DATA
+------------------------- */
+
+.profile-data {
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.2);
+}
+
+.profile-data-row {
+    display: grid;
+
+    grid-template-columns:
+        200px 1fr;
+
+    gap: 30px;
+
+    padding:
+        25px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.15);
+}
+
+.profile-data-row span {
+    font-size: 11px;
+
+    letter-spacing: 0.2em;
+
+    opacity: 0.5;
+}
+
+.profile-data-row p {
+    font-size: 15px;
+
+    letter-spacing: 0.05em;
+}
+
+
+/* -------------------------
+   FAVORITES
+------------------------- */
+
+.profile-favorites {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+}
+
+.profile-favorite {
+    min-height: 280px;
+
+    padding: 40px;
+
+    background: #080808;
+}
+
+.profile-favorite-number {
+    margin-bottom: 45px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.2em;
+
+    opacity: 0.4;
+}
+
+.profile-favorite-content h3 {
+    margin-bottom: 25px;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.05em;
+}
+
+.profile-favorite-content p {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    opacity: 0.7;
+}
+
+.profile-favorite-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
    SNS
 ========================= */
 
@@ -1305,6 +1524,91 @@ footer a {
         font-size: 38px;
     }
 
+       /* -------------------------
+       PROFILE PAGE
+    ------------------------- */
+
+    .profile-page-main {
+        padding-top: 70px;
+    }
+
+    .profile-page-hero {
+        padding:
+            100px 6vw 80px;
+    }
+
+    .profile-page-hero h1 {
+        font-size: 58px;
+    }
+
+    .profile-page-name {
+        margin-top: 25px;
+
+        font-size: 15px;
+    }
+
+    .profile-page-section {
+        padding:
+            70px 6vw;
+    }
+
+    .profile-page-section-title {
+        gap: 15px;
+
+        margin-bottom: 40px;
+    }
+
+    .profile-page-section-title h2 {
+        font-size: 38px;
+    }
+
+    .profile-biography {
+        margin-left: 0;
+    }
+
+    .profile-biography p {
+        font-size: 14px;
+
+        line-height: 2;
+    }
+
+    .profile-data-row {
+        grid-template-columns:
+            110px 1fr;
+
+        gap: 15px;
+
+        padding:
+            20px 0;
+    }
+
+    .profile-data-row span {
+        font-size: 10px;
+    }
+
+    .profile-data-row p {
+        font-size: 14px;
+    }
+
+    .profile-favorites {
+        grid-template-columns:
+            1fr;
+    }
+
+    .profile-favorite {
+        min-height: auto;
+
+        padding: 30px;
+    }
+
+    .profile-favorite-number {
+        margin-bottom: 30px;
+    }
+
+    .profile-favorite-content h3 {
+        font-size: 22px;
+    }
+   
     /* -------------------------
        SNS
     ------------------------- */
